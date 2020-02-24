@@ -1,4 +1,7 @@
 @Library('piper-lib-os') _
+tools {
+nodejs 'NodeJS8.10.0'
+}
 node
 {
     stage('prepare') {
