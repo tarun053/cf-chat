@@ -7,6 +7,7 @@ node
     }
     
 stage('build') {
+    buildExecute script:this, buildTool: 'maven'
     mtaBuild script: this
 }
     stage('deploy') {
