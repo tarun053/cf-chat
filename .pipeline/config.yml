@@ -1,0 +1,14 @@
+general:
+steps:
+  mtaBuild:
+    buildTarget: 'CF'
+    dockerImage: ''
+    mtaJarLocation: '/opt/mta_archive_builder-1.1.20.jar'
+    mtaBuildTool: 'classic'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      org: 'P1940751883trial'
+      space: 'dev'
+      credentialsId: 'CF_CREDENTIALSID'
