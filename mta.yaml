@@ -1,0 +1,10 @@
+_schema-version: 2.1.0
+ID: chat_app2
+version: 1.0.0
+description: Chat App
+provider: SAP Sample generator
+
+modules:
+  - name: chat_app2
+    type: nodejs
+    path: .
