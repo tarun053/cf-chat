@@ -3,7 +3,8 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
     dockerImage: 'ppiper/mta-archive-builder'
-    mtaJarLocation: '/opt/sap/mta/lib/mta.jar'
+    mtaJarLocation: '/opt/mta_archive_builder-1.1.20.jar'
+    platform: 'cf'
     mtaBuildTool: 'classic'
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
