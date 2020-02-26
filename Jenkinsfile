@@ -11,8 +11,6 @@ stage('build') {
     mtaBuild script: this
 }
     stage('deploy') {
-    sh '''
     cloudFoundryDeploy script: this
-    '''
     }
 }
