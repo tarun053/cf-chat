@@ -3,7 +3,7 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
     platform: 'cf'
-    mtaJarLocation: '/opt/mta_archive_builder-1.1.20.jar'
+    dockerOptions: '--env HOME=/tmp/mta'
     mtaBuildTool: 'classic'
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
