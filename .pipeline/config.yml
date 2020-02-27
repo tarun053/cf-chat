@@ -2,7 +2,7 @@ general:
 steps:
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
+    deployType: 'cf_native'
     verbbose: 'true'
     cloudFoundry:
       org: 'P1940751883trial_trial'
