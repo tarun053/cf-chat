@@ -1,8 +1,8 @@
 general:
 steps:
   cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'cf_native'
+    deployTool: 'cf_native'
+    deployType: 'blue-green'
     verbbose: 'true'
     cloudFoundry:
       org: 'P1940751883trial_trial'
