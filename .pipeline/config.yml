@@ -4,8 +4,6 @@ steps:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
     verbbose: 'true'
-    loginParameters:
-    CF_DIAL_TIMEOUT: '15'
     cloudFoundry:
       org: 'P1940751883trial_trial'
       space: 'dev'
