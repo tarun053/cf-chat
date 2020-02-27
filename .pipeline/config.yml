@@ -5,9 +5,11 @@ steps:
     platform: 'cf'
     dockerOptions: '--env HOME=/tmp/mta'
     mtaBuildTool: 'classic'
+    verbbose: 'true'
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
+    verbbose: 'true'
     cloudFoundry:
       org: 'P1940751883trial_trial'
       space: 'dev'
