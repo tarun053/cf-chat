@@ -3,7 +3,6 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
     platform: 'cf'
-    dockerOptions: '--env HOME=/tmp/mta'
     mtaBuildTool: 'classic'
     verbbose: 'true'
   cloudFoundryDeploy:
