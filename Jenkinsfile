@@ -1,4 +1,4 @@
-@Library('piper-lib-local') _
+@Library(https://github.com/SAP/jenkins-library) _
 
 node
 {
