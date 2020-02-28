@@ -2,6 +2,10 @@
 
 node
 {
+    agent {
+        label "master"
+    }
+    
     stage('prepare') {
         checkout scm
         setupCommonPipelineEnvironment script:this
