@@ -1,4 +1,4 @@
-@Library(https://github.com/SAP/jenkins-library) _
+@Library: https://github.com/SAP/jenkins-library
 
 node
 {
