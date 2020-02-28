@@ -1,4 +1,4 @@
-@Library: https://github.com/SAP/jenkins-library
+@Library('piper-lib-os') _
 
 node
 {
