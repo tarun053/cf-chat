@@ -1,11 +1,7 @@
 @Library('piper-lib-local') _
 
-node
-{
-    agent {
-        label "master"
-    }
-    
+node('master')
+{   
     stage('prepare') {
         checkout scm
         setupCommonPipelineEnvironment script:this
