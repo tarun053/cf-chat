@@ -8,9 +8,13 @@ node('master')
     }
     
 stage('build') {
-    mtaBuild script: this
+    mtaBuild(
+        script: this,
+        verbose: 'true' )
 }
     stage('deploy') {
-    cloudFoundryDeploy script: this
+    cloudFoundryDeploy( 
+        script: this,
+        verbose: 'true' )
     }
 }
