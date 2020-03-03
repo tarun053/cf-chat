@@ -6,11 +6,3 @@ steps:
     mtaPath: chat_app2.mtar
     customDescription: Transport from Piper
     verbose: 'true'
-  cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
-    verbose: 'true'
-    cloudFoundry:
-      org: 'P1940751883trial_trial'
-      space: 'dev'
-      credentialsId: 'CF_CREDENTIALSID'
