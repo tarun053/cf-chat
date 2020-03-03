@@ -3,7 +3,7 @@ steps:
   tmsUpload:
     credentialsId: ServiceKeyTMS
     nodeName: Dev
-    mtaPath: 'chat_app2.mtar'
+    mtaPath: chat_app2.mtar
     customDescription: Transport from Piper
     verbose: 'true'
   cloudFoundryDeploy:
