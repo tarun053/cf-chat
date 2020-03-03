@@ -6,3 +6,4 @@ node
         script: this,
         verbose: 'true' )
     }
+}
