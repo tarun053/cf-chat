@@ -1,5 +1,10 @@
 general:
 steps:
+  tmsUpload:
+    credentialsId: ServiceKeyTMS
+    nodeName: Dev
+    mtaPath: com.piper.example.tms.mtar
+    customDescription: Transport from Piper
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
