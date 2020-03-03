@@ -1,6 +1,3 @@
-@Library('piper-lib-local') _
+@Library('piper-lib-os') _
 
-node('master')
-{
 piperPipeline script:this
-}
