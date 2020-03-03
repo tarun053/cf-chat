@@ -1,3 +1,8 @@
 @Library('piper-lib-os') _
-
-piperPipeline script:this
+node
+{
+    stage('tmsUpload') {
+        tmsUpload(
+        script: this,
+        verbose: 'true' )
+    }
