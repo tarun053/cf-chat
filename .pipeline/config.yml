@@ -3,7 +3,7 @@ steps:
   tmsUpload:
     credentialsId: ServiceKeyTMS
     nodeName: Dev
-    mtaPath: '/var/lib/jenkins/workspace/SCPDeploy_CF_Chat_Local_master/chat_app2.mtar'
+    mtaPath: '/var/lib/jenkins/workspace/SCPDeploy_CF_Chat_Local_master'
     customDescription: Transport from Piper
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
