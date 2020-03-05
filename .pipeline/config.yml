@@ -1,8 +1,8 @@
 general:
 steps:
   tmsUpload:
-    credentialsId: ServiceKeyTMS
-    nodeName: Dev
-    mtaPath: chat_app2.mtar
-    customDescription: Transport from Piper
+    credentialsId: 'ServiceKeyTMS'
+    nodeName: 'Dev'
+    mtaPath: 'chat_app2.mtar'
+    customDescription: 'Transport from Piper'
     verbose: 'true'
