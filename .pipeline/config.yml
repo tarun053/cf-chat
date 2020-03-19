@@ -1,8 +1,11 @@
 general:
 steps:
-  tmsUpload:
-    credentialsId: 'ServiceKeyTMS'
-    nodeName: 'Dev'
-    mtaPath: 'chat_app2.mtar'
-    customDescription: 'Transport from Piper'
-    verbose: 'true'
+  mtaBuild:
+    buildTarget: 'CF'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      org: 'P1940751883trial_trial'
+      space: 'dev'
+      credentialsId: 'CF_CREDENTIALSID'
