@@ -9,7 +9,6 @@ node('master')
 stage('build') {
     mtaBuild(
         script: this,
-        mtaBuildTool: 'Classic',
         verbose: 'true' )
 }
     stage('deploy') {
