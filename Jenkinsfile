@@ -9,7 +9,7 @@ node('master')
 stage('build') {
     mtaBuild(
         script: this,
-        mtaBuildTool: 'cloudMbt',
+        mtaBuildTool: 'Classic',
         verbose: 'true' )
 }
     stage('deploy') {
