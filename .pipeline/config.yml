@@ -9,4 +9,4 @@ steps:
     cloudFoundry:
       org: 'P1940751883trial_trial'
       space: 'dev'
-      credentialsId: 'CF_CREDENTIALSID'
+      credentialsId: 'CF-devsecops20'
