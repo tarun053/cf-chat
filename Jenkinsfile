@@ -5,15 +5,4 @@ node('master')
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
-    
-stage('build') {
-    mtaBuild(
-        script: this,
-        verbose: 'true' )
-}
-    stage('deploy') {
-    cloudFoundryDeploy( 
-        script: this,
-        verbose: 'true' )
-    }
 }
