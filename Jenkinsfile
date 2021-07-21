@@ -1,6 +1,6 @@
 @Library('piper-lib-os') _
 
-node('master'){
+node('jenkins233slave'){
   stage('Prepare')   {
       checkout scm
       setupCommonPipelineEnvironment script:this
