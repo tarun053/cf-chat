@@ -1,11 +1,19 @@
-@Library('piper-lib-os') _
+@Library('piper-lib-local') _
 
-node('jenkins233slave'){
+node(){
+  stage('Prepare')   {
+      checkout scm
+      setupCommonPipelineEnvironment script:this
+  }
+
+  stage('Build')   {
+      mtaBuild (
+      script:this )
+  }
+
   stage('Deploy')   {
       cloudFoundryDeploy(
       script:this, 
-      cloudFoundry: [apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com', appName:'chatapp2', credentialsId: 'CF-devsecops20', org: '47dac577trial', space: 'dev'],
-      deployTool: 'cf_native',
       verbose:true)
   }
 }
