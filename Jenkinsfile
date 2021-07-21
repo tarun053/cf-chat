@@ -9,4 +9,9 @@ node('jenkins233slave'){
     mtaBuild(
         script: this )
   }
+    stage('deploy') {
+    cloudFoundryDeploy( 
+        script: this,
+        verbose: 'true' )
+    }  
 }
