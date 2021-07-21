@@ -7,7 +7,6 @@ node('master'){
   }
   stage('build') {
     mtaBuild(
-        script: this,
-        verbose: 'true' )
+        script: this )
   }
 }
